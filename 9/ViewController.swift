@@ -8,12 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet private weak var prefectureLabel: UILabel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPrefectureViewControllerSegue" {
+            let prefectureVC = segue.destination as? PrefectureViewController
+            prefectureVC?.delegate = self
+        }
     }
-
-
 }
 
+extension ViewController: PrefectureDelegate {
+    func setPrefecture(prefecture: String?) {
+        prefectureLabel.text = prefecture
+    }
+}
