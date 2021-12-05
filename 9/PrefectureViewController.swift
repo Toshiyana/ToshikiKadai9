@@ -10,10 +10,6 @@ import UIKit
 class PrefectureViewController: UIViewController {
     weak var delegate: PrefectureDelegate?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction private func cancelButtonPressed() {
         dismiss(animated: true, completion: nil)
     }
