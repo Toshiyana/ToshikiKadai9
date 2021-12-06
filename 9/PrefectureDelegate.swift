@@ -7,6 +7,7 @@
 
 import Foundation
 
-protocol PrefectureDelegate: AnyObject {
-    func setPrefecture(prefecture: String?)
+protocol PrefectureViewControllerDelegate: AnyObject {
+    func didSelect(prefecture: String)
+    func didCancel()
 }
