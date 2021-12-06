@@ -8,15 +8,14 @@
 import UIKit
 
 class PrefectureViewController: UIViewController {
-    weak var delegate: PrefectureDelegate?
+    weak var delegate: PrefectureViewControllerDelegate?
 
     @IBAction private func cancelButtonPressed() {
-        dismiss(animated: true, completion: nil)
+        delegate?.didCancel()
     }
 
     @IBAction private func prefectureButtonPressed(_ sender: UIButton) {
-        let prefecture = sender.titleLabel?.text
-        delegate?.setPrefecture(prefecture: prefecture)
-        dismiss(animated: true, completion: nil)
+        guard let prefecture = sender.titleLabel?.text else { return }
+        delegate?.didSelect(prefecture: prefecture)
     }
 }

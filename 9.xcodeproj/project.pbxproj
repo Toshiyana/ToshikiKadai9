@@ -14,7 +14,7 @@
 		999BFB13275BBBD700D2E143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999BFB12275BBBD700D2E143 /* Assets.xcassets */; };
 		999BFB16275BBBD700D2E143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999BFB14275BBBD700D2E143 /* LaunchScreen.storyboard */; };
 		999BFB1E275BBDB000D2E143 /* PrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BFB1D275BBDB000D2E143 /* PrefectureViewController.swift */; };
-		999BFB20275BBFE800D2E143 /* PrefectureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BFB1F275BBFE800D2E143 /* PrefectureDelegate.swift */; };
+		999BFB20275BBFE800D2E143 /* PrefectureViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BFB1F275BBFE800D2E143 /* PrefectureViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		999BFB15275BBBD700D2E143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		999BFB17275BBBD700D2E143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		999BFB1D275BBDB000D2E143 /* PrefectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureViewController.swift; sourceTree = "<group>"; };
-		999BFB1F275BBFE800D2E143 /* PrefectureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureDelegate.swift; sourceTree = "<group>"; };
+		999BFB1F275BBFE800D2E143 /* PrefectureViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				999BFB0B275BBBD300D2E143 /* SceneDelegate.swift */,
 				999BFB0D275BBBD300D2E143 /* ViewController.swift */,
 				999BFB1D275BBDB000D2E143 /* PrefectureViewController.swift */,
-				999BFB1F275BBFE800D2E143 /* PrefectureDelegate.swift */,
+				999BFB1F275BBFE800D2E143 /* PrefectureViewControllerDelegate.swift */,
 				999BFB0F275BBBD300D2E143 /* Main.storyboard */,
 				999BFB12275BBBD700D2E143 /* Assets.xcassets */,
 				999BFB14275BBBD700D2E143 /* LaunchScreen.storyboard */,
@@ -166,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				999BFB20275BBFE800D2E143 /* PrefectureDelegate.swift in Sources */,
+				999BFB20275BBFE800D2E143 /* PrefectureViewControllerDelegate.swift in Sources */,
 				999BFB0E275BBBD300D2E143 /* ViewController.swift in Sources */,
 				999BFB1E275BBDB000D2E143 /* PrefectureViewController.swift in Sources */,
 				999BFB0A275BBBD300D2E143 /* AppDelegate.swift in Sources */,

@@ -12,14 +12,23 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPrefectureViewControllerSegue" {
-            let prefectureVC = segue.destination as? PrefectureViewController
-            prefectureVC?.delegate = self
+            guard let navC = segue.destination as? UINavigationController,
+                  let prefectureVC = navC.topViewController as? PrefectureViewController else {
+                return
+            }
+
+            prefectureVC.delegate = self
         }
     }
 }
 
-extension ViewController: PrefectureDelegate {
-    func setPrefecture(prefecture: String?) {
+extension ViewController: PrefectureViewControllerDelegate {
+    func didSelect(prefecture: String) {
+        dismiss(animated: true, completion: nil)
         prefectureLabel.text = prefecture
+    }
+
+    func didCancel() {
+        dismiss(animated: true, completion: nil)
     }
 }
