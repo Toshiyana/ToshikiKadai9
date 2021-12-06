@@ -36,7 +36,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="入力"/>
                                         <connections>
-                                            <segue destination="wZu-pA-ELJ" kind="presentation" identifier="toPrefectureViewControllerSegue" modalPresentationStyle="overCurrentContext" id="dzv-jY-WVN"/>
+                                            <segue destination="rYi-Xx-jxF" kind="presentation" identifier="toPrefectureViewControllerSegue" modalPresentationStyle="overCurrentContext" id="dzv-jY-WVN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -65,20 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-jM-m0R">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem id="G4x-hJ-XPI">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6l1-FF-REN">
-                                            <connections>
-                                                <action selector="cancelButtonPressed" destination="wZu-pA-ELJ" id="WBF-Kd-1aZ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="tsj-kU-Xga">
-                                <rect key="frame" x="166.5" y="148" width="81.5" height="232"/>
+                                <rect key="frame" x="166.5" y="192" width="81.5" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivn-Ck-K5L">
                                         <rect key="frame" x="0.0" y="0.0" width="81.5" height="31"/>
@@ -118,17 +106,39 @@
                         <viewLayoutGuide key="safeArea" id="xZl-Zs-XGl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rbL-jM-m0R" firstAttribute="trailing" secondItem="xZl-Zs-XGl" secondAttribute="trailing" id="5G4-TP-eSM"/>
-                            <constraint firstItem="rbL-jM-m0R" firstAttribute="leading" secondItem="xZl-Zs-XGl" secondAttribute="leading" id="AEF-rl-ao6"/>
-                            <constraint firstItem="tsj-kU-Xga" firstAttribute="top" secondItem="rbL-jM-m0R" secondAttribute="bottom" constant="60" id="PR9-fh-991"/>
                             <constraint firstItem="tsj-kU-Xga" firstAttribute="centerX" secondItem="Jel-co-Lsd" secondAttribute="centerX" id="aC3-ql-UmP"/>
-                            <constraint firstItem="rbL-jM-m0R" firstAttribute="top" secondItem="xZl-Zs-XGl" secondAttribute="top" id="rgN-4f-aMe"/>
+                            <constraint firstItem="tsj-kU-Xga" firstAttribute="top" secondItem="xZl-Zs-XGl" secondAttribute="top" constant="104" id="l9g-GD-mJ0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IPi-aJ-VeS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bhP-xE-hfq">
+                            <connections>
+                                <action selector="cancelButtonPressed" destination="wZu-pA-ELJ" id="NdT-WZ-8Bu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3SA-na-cwN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="82"/>
+            <point key="canvasLocation" x="1944.9275362318842" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TSX-RW-ivR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rYi-Xx-jxF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wKh-ar-dDj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wZu-pA-ELJ" kind="relationship" relationship="rootViewController" id="UHO-UU-9ph"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpE-ze-OrJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
